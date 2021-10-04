@@ -1,38 +1,38 @@
 # Custom-EV-IV-Display-Screen
+Customizable Base Stat, EV, and IV checker for Pokemon Fire Red.
+Original by Acimut (https://github.com/Acimut/Custom-EV-IV-Display-Screen)
+Black/White styled background by Versekr Dark.
+Translated to English by me (original is in Spanish)
 
-
-Original README:
-
-# Custom-EV-IV-Display-Screen
- Plantilla personalizable para mostar información de EV, IV y BS de nuestro equipo pokémon en una nueva pantalla. Pokémon Fire Red.
+The files inside the src \ include \ folder were taken from pokefirered.
  
-Los archivos dentro de la carpeta src\include\ fueron tomado de pokefirered.
- 
-Características:
+Features
 -
-+ Puedes cambiar el fondo reemplazando el que viene por defecto, la inyección la insertará automáticamente.
-+ Se puede cambiar las coordenadas del sprite del pokémon, así como sus textos.
-+ El color de la estadística de IVs cambia de acuerdo a la naturaleza.
-+ Muestra estadísticas base de acuerdo a la especie.
-+ Censura la estadística de los huevos, en cambio, dice aprox. cúantos pasos te falta para la eclosión.
-+ Bien bomnito y con somniditos xd
-+ Huele a limón.
-+ base: pokémon fire red.
-
++ Changable background using Gale Wings and Tilemap Studio. It is automatically injected to the rom.
++ You can change the coordinates of the Pokémon sprite, as well as the text (attack, def, etc)
++ The color of the IVs statistic changes according to nature.
++ Shows base statistics of Pokemon
++ Shows IVs and EVs of the Pokemon
++ Shows how many steps a Egg will hatch in.
++ For Pokemon Fire Red
 
 ***Notas:***
 
-- DevkitARM y ARMIPS son necesarios (versiones más recientes).
+-DevkitARM required to build.
 
-- Para compilar es necesario tener preproc.exe y gbagfx.exe dentro alguna ruta de la variable PATH
+- Gbagfx.exe and preproc.exe also required.
 
-- Abrir el archivo Makefile, buscar y cambiar ff0000 de la siguiente línea por un offset alineado con suficiente espacio libre (más de 0x2000 bytes):
-        `export INSERT_INTO := 0x08ff0000`
+- Put Fire Red 1.0 rom called BPRE0.gba and run make in command prompt
 
-- Usar en un script `callasm` seguido por el offset+1 donde insertaron el código.
+- Open the Makefile file, find and change ff0000 of the following line to insert to a different offset (more than 0x2000 bytes):
+        `export INSERT_INTO: = 0x08ff0000`
 
-- Compilan ejecutando make con su terminal, y una rom llamada "rom.gba" con la inyección aparecerá en una carpeta llamada build.
+- Use in a `callasm` script followed by offset + 1 where they inserted the code.
+         `Example: callasm 0x08ff0001 (where you inserted +1)`
 
-- Archivos dentro de la carpeta include fueron tomados de pokefirered.
+- Will make the rom "rom.gba" when inserted.
 
-- El archivo incbin.h es tomado del siguiente repositorio: https://github.com/graphitemaster/incbin
+- Files inside the include folder were taken from pokefirered.
+
+- The incbin.h file is taken from the following repository: https://github.com/graphitemaster/incbin
+
