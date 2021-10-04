@@ -16,6 +16,10 @@ Features
 + Shows how many steps a Egg will hatch in.
 + For Pokemon Fire Red
 
+Bugs
+-
++ Weird pinkish purple colour on top right of display
+
 ***Notas:***
 
 -DevkitARM required to build.
