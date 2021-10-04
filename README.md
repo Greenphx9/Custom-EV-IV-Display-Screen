@@ -20,6 +20,11 @@ Bugs
 -
 + Weird pinkish purple colour on top right of display
 
+Screenshots
+-
+![Alt text](https://i.imgur.com/FlzMJNO.png "Rattata")
+![Alt text](https://i.imgur.com/UKZlgqf.png "Squirtle")
+
 ***Notes:***
 
 -DevkitARM required to build.
