@@ -20,7 +20,7 @@ Bugs
 -
 + Weird pinkish purple colour on top right of display
 
-***Notas:***
+***Notes:***
 
 -DevkitARM required to build.
 
