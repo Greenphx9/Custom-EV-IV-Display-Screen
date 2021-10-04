@@ -686,6 +686,7 @@ static void ImprimirVentana2(u16 species, u8 isEgg, u8 friendship)
     {
         //agrega el texto total y la suma de los totales
         StringCopy(gStringVar4, gText_Total);
+        StringAppend(gStringVar4, gText_Espacios2);
         AddNumInto_gStringVar4(gTotalStatsBS);
         StringAppend(gStringVar4, gText_Espacios2);
         AddNumInto_gStringVar4(gTotalStatsEV);
